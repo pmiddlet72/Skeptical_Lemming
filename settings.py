@@ -3,6 +3,10 @@
 # MEZZANINE SETTINGS #
 ######################
 
+
+ALLOWED_HOSTS="*"
+
+
 # The following settings are already defined with default values in
 # the ``defaults.py`` module within each of Mezzanine's apps, but are
 # common enough to be put here, commented out, for convenient
@@ -87,7 +91,7 @@ USE_SOUTH = True
 # In the format (('Full Name', 'email@example.com'),
 #                ('Full Name', 'anotheremail@example.com'))
 ADMINS = (
-    # ('Your Name', 'your_email@domain.com'),
+    # ('The Skeptical Lemming', 'lemskep.blog@gmail.com'),
 )
 MANAGERS = ADMINS
 
@@ -98,7 +102,7 @@ MANAGERS = ADMINS
 # timezone as the operating system.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = None
+TIME_ZONE = "America/Chicago"
 
 # If you set this to True, Django will use timezone-aware datetimes.
 USE_TZ = True
